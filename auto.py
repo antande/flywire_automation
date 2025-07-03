@@ -17,7 +17,6 @@ driver = uc.Chrome()
 driver.get("https://codex.flywire.ai/?dataset=fafb")
 
 try:
-    # Change the selector below to something that's ONLY present after login
     WebDriverWait(driver, timeout=500).until(
         EC.presence_of_element_located((By.ID, "filter_string"))  # Example element
     )
