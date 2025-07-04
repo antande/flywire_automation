@@ -33,7 +33,7 @@ for file_in in input_files:
             val = text.split(" ")[3]
             print(val)
             with open(os.path.join(OUT_FOLDER_PATH, file_in), "a") as res_file:
-                res_file.write(line.replace(" ", "").replace("\t", "").replace("\n", "") + ',' + val + ",\n")
+                res_file.write(val + "\n")
 
 print("Finished fetching data!")
 driver.quit()
